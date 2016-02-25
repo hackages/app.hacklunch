@@ -1,15 +1,12 @@
 import angular, {module, bootstrap} from 'angular';
-import 'angular-ui-router';
 
 import shell from '../modules/shell/shell';
 import routes from './routes';
 
 // Importing modules
-import '../modules/session.hacklunch/dist/';
+import sessions from '../modules/session.hacklunch/dist/';
 
-module('hacklunch', ['ui.router', 'hl.sessions'])
-  .config(routes)
-  .component('hacklunch', shell);
+module('hacklunch', [routes, sessions]).component('hacklunch', shell);
 
 
 document.addEventListener('DOMContentLoaded', ()=>{
