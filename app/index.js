@@ -4,7 +4,10 @@ import 'angular-ui-router';
 import shell from '../modules/shell/shell';
 import routes from './routes';
 
-module('hacklunch', ['ui.router'])
+// Importing modules
+import '../modules/session.hacklunch/dist/';
+
+module('hacklunch', ['ui.router', 'hl.sessions'])
   .config(routes)
   .component('hacklunch', shell);
 

@@ -2,7 +2,11 @@ export default function routes($stateProvider){
   $stateProvider
     .state('home', {
       url: '/',
-      template: '<hacklunch></hacklunch>'
+      template: '<hl-sessions></hl-sessions>'
+    })
+    .state('sessions', {
+      url: '/sessions',
+      template: '<hl-sessions></hl-sessions>'
     });
 }
 
