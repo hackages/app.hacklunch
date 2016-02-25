@@ -1,4 +1,7 @@
-export default function routes($stateProvider){
+import angular, {module} from 'angular';
+import uiRouter from 'angular-ui-router';
+
+export function routes($stateProvider){
   $stateProvider
     .state('home', {
       url: '/',
@@ -11,3 +14,5 @@ export default function routes($stateProvider){
 }
 
 routes.$inject = ['$stateProvider'];
+
+export default angular.module('hl.routes', [uiRouter]).config(routes).name;
