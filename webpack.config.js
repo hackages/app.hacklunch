@@ -4,6 +4,7 @@ let path     = require('path');
 let webpack  = require('webpack');
 
 module.exports = {
+  devtool: 'source-map',
   entry: './app/index',
   output: {
     filename: 'hacklunch.js',
