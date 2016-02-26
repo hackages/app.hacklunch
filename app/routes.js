@@ -15,4 +15,4 @@ export function routes($stateProvider){
 
 routes.$inject = ['$stateProvider'];
 
-export default angular.module('hl.routes', [uiRouter]).config(routes).name;
+export default module('hl.routes', [uiRouter]).config(routes).name;
