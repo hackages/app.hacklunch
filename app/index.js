@@ -4,9 +4,10 @@ import shell from '../modules/shell/shell';
 import routes from './routes';
 
 // Importing modules
-import sessions from '../modules/session.hacklunch/dist/';
+import sessions from '../modules/sessions/dist/';
+console.log(sessions)
 
-module('hacklunch', [routes, sessions]).component('hacklunch', shell);
+module('hacklunch', [routes, 'hl.sessions']).component('hacklunch', shell);
 
 
 document.addEventListener('DOMContentLoaded', ()=>{
