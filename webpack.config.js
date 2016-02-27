@@ -26,8 +26,12 @@ module.exports = {
       },
       {
         test: /\.html$/,
-        loader: 'html-loader',
+        loader: 'html',
         exclude: /node_modules/
+      },
+      {
+        test: /\.css$/,
+        loader: 'style!css'
       }
     ]
   }
