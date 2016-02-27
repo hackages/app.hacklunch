@@ -5,7 +5,7 @@ export function routes($stateProvider){
   $stateProvider
     .state('home', {
       url: '/',
-      template: '<hl-sessions></hl-sessions>'
+      template: '<sessions></sessions>'
     })
     .state('sessions', {
       url: '/sessions',
