@@ -6,7 +6,8 @@
   "scripts": {
     "test": "mocha -w",
     "start": "live-server",
-    "build": "webpack -w"
+    "build": "webpack -w",
+    "deploy": "surge -p public/"
   },
   "keywords": [],
   "author": "davy@pullstream.com",
