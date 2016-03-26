@@ -9,10 +9,9 @@ module.exports = {
   output: {
     filename: 'hacklunch.js',
     path: path.join(__dirname, 'dist'),
-    vendor: ['angular']
+    // vendor: ['react']
   },
   plugins: [
-    new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.bundle.js')
   ],
   module: {
     loaders: [
@@ -21,7 +20,7 @@ module.exports = {
         loader: 'babel',
         exclude: /node_modules/,
         query: {
-          presets: ['es2015']
+          presets: ['es2015', 'react']
         }
       },
       {
@@ -36,3 +35,7 @@ module.exports = {
     ]
   }
 };
+
+
+
+// new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.bundle.js')
