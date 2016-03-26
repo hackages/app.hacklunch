@@ -1,13 +1,10 @@
-import angular, {module, bootstrap} from 'angular';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-import shell from '../modules/shell/shell';
-import routes from './routes';
-
-// Importing modules
-import sessions from '../modules/sessions/app/';
-
-module('hacklunch', [routes, sessions]).component('hacklunch', shell);
-
-document.addEventListener('DOMContentLoaded', ()=>{
-  bootstrap(document.body, ['hacklunch'], {strictDi: true});
+const Shell = React.createClass({
+  render() {
+    return <div>HackLunch is running</div>;
+  }
 });
+
+ReactDOM.render(<Shell/>, document.getElementById('hacklunch'));
