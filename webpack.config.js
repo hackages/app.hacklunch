@@ -1,7 +1,5 @@
-'use strict';
-
-let path     = require('path');
-let webpack  = require('webpack');
+const path     = require('path');
+const webpack  = require('webpack');
 
 module.exports = {
   devtool: 'source-map',
@@ -9,7 +7,6 @@ module.exports = {
   output: {
     filename: 'hacklunch.js',
     path: path.join(__dirname, 'dist'),
-    // vendor: ['react']
   },
   plugins: [
   ],
@@ -36,6 +33,3 @@ module.exports = {
   }
 };
 
-
-
-// new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.bundle.js')
